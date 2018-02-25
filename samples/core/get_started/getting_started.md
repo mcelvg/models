@@ -57,3 +57,10 @@ b'Hello, TensorFlow!'
 * _Custom estimator mimicking a `DNNClassifier` for the Iris data set_ ([custom_estimator.py](https://github.com/mcelvg/models/blob/master/samples/core/get_started/custom_estimator.py))
 * Walk through branching model function
 * Minimal demo of tensorboard
+
+
+
+[Low level intro](https://www.tensorflow.org/programmers_guide/low_level_intro)
+
+* _Walk through basics of tensors, ops, sessions, layers, and initialization_  
+  [low_level_intro.ipynb](https://github.com/mcelvg/models/blob/master/samples/core/get_started/low_level_intro.ipynb)
