@@ -91,3 +91,17 @@ def csv_input_fn(csv_path, batch_size):
 
     # Return the dataset.
     return dataset
+
+
+def csv_eval_input_fn(csv_path, batch_size):
+    """An input function for evaluation or prediction from CSV file"""
+
+    dataset = tf.data.TextLineDataset(csv_path).skip(1)
+    dataset = dataset.map(_parse_line)
+
+    # Batch the examples
+    assert batch_size is not None, "batch_size must not be None"
+    dataset = dataset.batch(batch_size)
+
+    # Return the dataset.
+    return dataset
